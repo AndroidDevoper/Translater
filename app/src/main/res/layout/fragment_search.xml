@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.search.SearchFragment">
+
+    <EditText
+        android:id="@+id/fragment_search_et_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/fragment_search_btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_search_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
+
+    <ListView
+        android:id="@+id/fragment_search_listView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_search_tv_from"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <Spinner
+        android:id="@+id/fragment_search_spinner_from"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_search_tv_from"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_search_et_value"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toEndOf="@+id/fragment_search_tv_from"
+        app:layout_constraintTop_toTopOf="@+id/fragment_search_tv_from" />
+
+    <Spinner
+        android:id="@+id/fragment_search_spinner_to"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_search_spinner_from"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/fragment_search_tv_to"
+        app:layout_constraintTop_toTopOf="@+id/fragment_search_spinner_from"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/fragment_search_tv_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_search_tv_from"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_search_et_value"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_search_et_value"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/fragment_search_tv_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_search_tv_to"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_search_tv_from"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_search_et_value"
+        app:layout_constraintStart_toEndOf="@+id/fragment_search_spinner_from"
+        app:layout_constraintTop_toTopOf="@+id/fragment_search_tv_from" />
+</androidx.constraintlayout.widget.ConstraintLayout>

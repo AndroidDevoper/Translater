@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Translater</string>
+    <string name="title_search">Search</string>
+    <string name="title_history">History</string>
+    <string name="fragment_search_tv_from">From:</string>
+    <string name="fragment_search_tv_to">To:</string>
+    <string name="fragment_search_btn">Search</string>
+    <string name="item_history_pointer">-></string>
+</resources>
